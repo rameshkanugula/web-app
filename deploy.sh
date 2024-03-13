@@ -1,10 +1,6 @@
 #!/bin/bash
 
-
-# Build Docker image
-
-# Save Docker image as tar file
-
-# Transfer Docker image to the server
-# Remove the tar file from the server
-
+docker login -u rameshkanugula -p dckr_pat_lz8lgLxBeNawXwRaXof3ewr8blE
+docker tag capstone rameshkanugula/prod
+docker push rameshkanugula/prod
+docker-compose up -d
